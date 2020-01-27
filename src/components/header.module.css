@@ -1,0 +1,67 @@
+.header {
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.header:hover {
+    box-shadow: 0 2px 3px rgba(0,0,0,0.25), 0 1px 1px rgba(0,0,0,0.22);
+}
+
+.headerContent {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+}
+
+.threeMenu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 30px;
+}
+
+.title {
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-right: 70px;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.circleci {
+    font-size: 14px;
+    font-weight: 500;
+    margin-right: 50px;
+    text-decoration: none;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.button {
+    width: 250px;
+    height: 50px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.5;
+    border-width: 1px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    background: #04AA51;
+    border-color: #04AA51;
+    transition: all 400ms ease;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; 
+}
+
+.button:hover {
+    background: rgb(13, 218, 108);
+}

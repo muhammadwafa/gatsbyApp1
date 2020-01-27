@@ -1,0 +1,21 @@
+.menu {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+}
+
+.menuitem {
+    color: #898989;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.link {
+    text-decoration: none;
+}

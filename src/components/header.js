@@ -1,42 +1,34 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React from "react";
+import styles from "./header.module.css";
+import { useStaticQuery, graphql } from "gatsby";
+import Img from 'gatsby-image';
+import Menu from './menu';
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+export default () => {
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+    const data = useStaticQuery(graphql` query {
+        logo: file(relativePath: { eq: "images/gatsby-icon.png" }) {
+            childImageSharp {
+                fixed(width: 50, height: 50) {
+                    ...GatsbyImageSharpFixed
+                }
+            }
+        }
+    }`);
+
+    return (
+        <div className={styles.header}>
+            <div className={styles.headerContent}>
+                <div className={styles.threeMenu}>
+                    <Img className={styles.logo} fixed={data.logo.childImageSharp.fixed} objectFit="cover"  alt="" />
+                    <p className={styles.title}>Blog</p>
+                    <a className={styles.circleci} href="">About CircleCI</a>
+                </div>
+                <div />
+                <button className={styles.button}>Start building for free</button>
+            </div>
+            <Menu />
+        </div>
+    );
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header

@@ -5,14 +5,16 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    `react-grid-layout`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: `src`,
+        path: `${__dirname}/src/`,
       },
     },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

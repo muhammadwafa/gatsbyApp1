@@ -1,0 +1,73 @@
+.card {
+  cursor: pointer;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: .7s;
+}
+  
+.card:hover {
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+  transform: translateY(-5px);
+}
+
+.content {
+  padding: 1rem;
+}
+
+.person {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.image {
+  width: 100%;
+}
+
+.subTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.subTitleItem {
+  color: gray;
+}
+
+.personImage {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  border-radius: 30px;
+}
+
+.personName {
+  color: rgb(153, 149, 149);
+  text-align: right;
+}
+
+
+  /* .card:nth-of-type(1){
+    background: #d66969;
+  }
+
+  .card:nth-of-type(2){
+    background: #5e5e5e;
+  }
+
+  .card:nth-of-type(3){
+    background: #1f1f1f;
+  }
+
+  .card:nth-of-type(4){
+    background: #cccccc;
+  }
+
+  .card:nth-of-type(5){
+    background: #f0f0f0;
+  }
+
+  .card:nth-of-type(6){
+    background: #1d1d1d;
+  } */
